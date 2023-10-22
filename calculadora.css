@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fundo {
+    background-color: #d8b568;
+    height: 100vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.calculadora {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.botao {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: none;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: #fff;
+}
+
+.botao-divisao,
+.botao-mais,
+.botao-menos,
+.botao-multiplicacao,
+.botao-igual {
+    background-color: #c9df72;
+}
+
+.botao:hover {
+    background-color: black;
+}
+
+#resultado {
+    background-color: white;
+    width: flex;
+    height: 100px; /* Aumente a altura do visor */
+    margin: 5px;
+    font-size: 40px; /* Aumente o tamanho da fonte */
+    color: black;
+    text-align: right;
+    padding: 10px; /* Aumente o padding para dar espaço ao conteúdo */
+    overflow: hidden;
+    white-space: none; /* Impede que os números quebrem em várias linhas */
+}
